@@ -9,7 +9,7 @@ The convetions and good practices for coding and architecture patterns are writt
 This repository contains the following assets:
 
 - **template:** A basic template which can be used as a basis for the development of a new App.
-- **generator:** 
+- **generator:** A generator based on yeoman. Can be used for gerating an empty basis App.
 
 
 == Additional Repositories
