@@ -1,0 +1,22 @@
+= Devon4Android
+
+The devonfw Platform provides a solution to building applications which combine best-in class-frameworks and libraries as well as industry proven practices and code conventions. Devon4Android is the Android variant of the devonfw focusing on native mobile applications. The artifacts are developed in Kotlin.
+
+The convetions and good practices for coding and architecture patterns are written down in the Guide. 
+
+== Contents
+
+This repository contains the following assets:
+
+- **template:** A basic template which can be used as a basis for the development of a new App.
+- **generator:** 
+
+
+== Additional Repositories
+
+Following repositories also belong to Devon4Android:
+
+- **devon4android-MyThaiStar**: Reference Application for Devon4Android. Shows how the described guidelines can be practically applied. 
+- **devon4android-security**: Security Module
+- **devon4android-security-u2f**: Module for Universal 2nd Factor authentication
+- **devon4android-security-u2fdemo**: Demo App for showing u2f authentication
