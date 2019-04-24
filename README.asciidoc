@@ -16,7 +16,7 @@ This repository contains the following assets:
 
 Following repositories also belong to Devon4Android:
 
-- **devon4android-MyThaiStar**: Reference Application for Devon4Android. Shows how the described guidelines can be practically applied. 
-- **devon4android-security**: Security Module
-- **devon4android-security-u2f**: Module for Universal 2nd Factor authentication
-- **devon4android-security-u2fdemo**: Demo App for showing u2f authentication
+- **https://github.com/devonfw-forge/devon4android-MyThaiStar[devon4android-MyThaiStar]**: Reference Application for Devon4Android. Shows how the described guidelines can be practically applied. 
+- **https://github.com/devonfw-forge/devon4android-security[devon4android-security]**: Security Module
+- **https://github.com/devonfw-forge/devon4android-security-u2f[devon4android-security-u2f]**: Module for Universal 2nd Factor authentication
+- **https://github.com/devonfw-forge/devon4android-security-u2fdemo[devon4android-security-u2fdemo]**: Demo App for showing u2f authentication
