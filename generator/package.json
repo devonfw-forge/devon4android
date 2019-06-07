@@ -1,0 +1,22 @@
+{
+  "name": "generator-oasp-android",
+  "version": "0.0.1",
+  "description": "OASP Android template generator",
+  "author": {
+    "name": "Maciej Jagiello",
+    "email": "maciej.jagiello@capgemini.com"
+  },
+  "files": [
+    "generators"
+  ],
+  "keywords": [
+    "yeoman-generator",
+    "android"
+  ],
+  "dependencies": {
+    "yeoman-generator": "^1.1.1",
+    "chalk": "^1.0.0",
+    "yosay": "^1.0.0"
+  },
+  "private": true
+}
