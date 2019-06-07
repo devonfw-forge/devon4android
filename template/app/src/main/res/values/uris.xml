@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home_webimage_uri">https://i.imgur.com/B8rAJP7.png</string>
+    <string name="home_localimage_uri">local://img/android-gingerbread.png</string>
+</resources>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">BaseApp</string>
+    <string name="home_message">Welcome in example app!</string>
+    <string name="home_button">Show something</string>
+    <string name="home_async_button">Preview async job</string>
+    <string name="home_webimage_button">Web image</string>
+    <string name="home_localimage_button">Local image</string>
+
+    <string name="async_welcome">Let\'s do some asynchronous job!</string>
+    <string name="async_progress">%1$d%% of job ready</string>
+    <string name="async_button">Start job</string>
+
+    <string name="menu_search">Internet search</string>
+
+    <string name="drawer_open">Drawer open</string>
+    <string name="drawer_close">Drawer close</string>
+</resources>

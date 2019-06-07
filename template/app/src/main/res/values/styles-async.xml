@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AsyncCommon">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/default_padding</item>
+    </style>
+
+    <style name="AsyncText" parent="AsyncCommon">
+    </style>
+
+    <style name="AsyncButton" parent="AsyncCommon">
+    </style>
+</resources>

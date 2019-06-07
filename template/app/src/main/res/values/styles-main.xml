@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="WelcomeCommon">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/default_padding</item>
+    </style>
+
+    <style name="HomeText" parent="WelcomeCommon">
+    </style>
+
+    <style name="HomeButton" parent="WelcomeCommon">
+    </style>
+</resources>
