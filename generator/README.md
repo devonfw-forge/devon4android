@@ -11,7 +11,7 @@ npm install -g yo
 ```
 Install the OASP-AG module from its repository using npm. This will install the generator itself and all the related modules. *NOTE*: you need to run this command in GIT Bash.
 ```
-npm install git+https://github.com/devonfw-forge/devon4android/generator
+npm install git+https://github.com/devonfw-forge/devon4android.git
 ```
   
 # Usage 

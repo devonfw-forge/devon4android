@@ -7,7 +7,7 @@
     "email": "maciej.jagiello@capgemini.com"
   },
   "files": [
-    "generators"
+    "generator"
   ],
   "keywords": [
     "yeoman-generator",
