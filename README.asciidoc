@@ -2,14 +2,14 @@
 
 The devonfw Platform provides a solution to building applications which combine best-in class-frameworks and libraries as well as industry proven practices and code conventions. Devon4Android is the Android variant of the devonfw focusing on native mobile applications. The artifacts are developed in Kotlin.
 
-The convetions and good practices for coding and architecture patterns are written down in the Guide. 
+The conventions and good practices for coding and architecture patterns are written down in the Guide.
 
 == Contents
 
 This repository contains the following assets:
 
 - **template:** A basic template which can be used as a basis for the development of a new App.
-- **generator:** A generator based on yeoman. Can be used for gerating an empty basis App.
+- **generators:** A generator based on yeoman. Can be used for generating an empty basis App.
 
 
 == Additional Repositories
