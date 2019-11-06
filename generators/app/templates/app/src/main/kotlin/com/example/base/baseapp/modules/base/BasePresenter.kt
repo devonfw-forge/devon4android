@@ -7,7 +7,7 @@ import java.util.*
 abstract class BasePresenter<UI : BaseUI> {
 
     private val commandQueue: Queue<UICommand<UI>> = LinkedList<UICommand<UI>>()
-    private zvar ui: UI? = null
+    private var ui: UI? = null
     private val compositeDisposable : CompositeDisposable? = null
 
     protected fun addDisposable(disposable: Disposable) {

@@ -12,7 +12,7 @@ import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
 
 abstract class BaseActivity<T : BasePresenter<BaseUI>, E : BaseActivityComponent> : AppCompatActivity(), BaseUI {
-    private var component: ActivityComponent? = null
+    internal var component: ActivityComponent? = null
     private val compositeDisposable = CompositeDisposable()
 
     @get:LayoutRes
@@ -35,7 +35,7 @@ abstract class BaseActivity<T : BasePresenter<BaseUI>, E : BaseActivityComponent
         this.compositeDisposable.add(disposable)
     }
 
-    override fun onRetainCustomNonConfigurationInstance(): Any {
+    override fun onRetainCustomNonConfigurationInstance(): Any? {
         return this.getComponent()
     }
 
@@ -46,7 +46,7 @@ abstract class BaseActivity<T : BasePresenter<BaseUI>, E : BaseActivityComponent
         this.injectActivity(this.getComponent())
     }
 
-    abstract fun getComponent(): E
+    abstract fun getComponent(): E?
 
-    protected abstract fun injectActivity(component: E)
+    protected abstract fun injectActivity(component: E?)
 }

@@ -15,7 +15,7 @@ import io.reactivex.Scheduler
 import io.reactivex.Single
 
 class MainPresenter @Inject
-constructor(@param:UiScheduler private val uiScheduler: Scheduler, @param:IOScheduler private val ioScheduler: Scheduler, @param:ComputationScheduler private val computationScheduler: Scheduler, private val exampleDataRepository: ExampleDataRepository) : BasePresenter<MainPresenter.UI>() {
+constructor(@param:UiScheduler private val uiScheduler: Scheduler, @param:IOScheduler private val ioScheduler: Scheduler, @param:ComputationScheduler private val computationScheduler: Scheduler, private val exampleDataRepository: ExampleDataRepository) : BasePresenter<BaseUI>() {
 
     fun populateDatabase() {}
 
@@ -24,7 +24,11 @@ constructor(@param:UiScheduler private val uiScheduler: Scheduler, @param:IOSche
         val getExampleData = exampleDataRepository.allExampleData
                 .subscribeOn(ioScheduler)
                 .observeOn(uiScheduler)
-        addDisposable(insertExampleData.andThen(getExampleData).subscribe { exampleDataList -> sendSticky({ ui -> ui.showAllExampleData(exampleDataList) }) })
+        addDisposable(insertExampleData.andThen(getExampleData).subscribe { exampleDataList -> sendSticky(object: UICommand<BaseUI>{
+            override fun execute(ui: BaseUI) {
+                (ui as MainActivity).showAllExampleData(exampleDataList)
+            }
+        }) })
     }
 
     interface UI : BaseUI {
