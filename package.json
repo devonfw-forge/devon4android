@@ -1,7 +1,7 @@
 {
-  "name": "generator-oasp-android",
+  "name": "generator-devon4android",
   "version": "0.0.1",
-  "description": "OASP Android template generator",
+  "description": "devon4android template generator",
   "author": {
     "name": "Maciej Jagiello",
     "email": "maciej.jagiello@capgemini.com"

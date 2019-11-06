@@ -32,7 +32,7 @@
         var props;
         var dirs;
 
-        this.log(yosay('Welcome to ' + chalk.bold.bgYellow('OASP Android') + ' project template generator. Please follow the instructions.'));
+        this.log(yosay('Welcome to ' + chalk.bold.bgYellow('devon4android') + ' project template generator. Please follow the instructions.'));
       },
 
       default: function () {
@@ -117,7 +117,7 @@
           const destTestDir = dirs.srcDir + '/test/' + dirs.packageDir;
 
           // templates app code
-          var currentCodePath = 'app/src/main/java/' + dirs.basePackagePath;
+          var currentCodePath = 'app/src/main/kotlin/' + dirs.basePackagePath;
           this.copyAndReplace(currentCodePath, dirs.codeDir, basePackageName, props.packageName);
 
           // templates androidTest dir
@@ -168,7 +168,7 @@
           type: 'input',
           name: 'compileSdk',
           message: 'Compile Android SDK:',
-          default: 25,
+          default: 28,
           validate: function (input) {
             if (sdkNumberRegex.test(input)) {
               return true;
@@ -180,7 +180,7 @@
           type: 'input',
           name: 'targetSdk',
           message: 'Target Android SDK:',
-          default: 25,
+          default: 28,
           validate: function (input) {
             if (sdkNumberRegex.test(input)) {
               return true;
@@ -211,7 +211,7 @@
         dirs.srcDir = props.projectName + '/app/src';
         dirs.projectDir = props.projectName + '/app';
         dirs.mainDir = dirs.srcDir + '/main';
-        dirs.codeDir = dirs.mainDir + '/java/' + dirs.packageDir;
+        dirs.codeDir = dirs.mainDir + '/kotlin/' + dirs.packageDir;
 
         this.baseTemplating();
         this.templateConfig();
