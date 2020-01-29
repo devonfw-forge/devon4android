@@ -17,7 +17,7 @@
   const targetSdkVersion = /(targetSdkVersion)( )([0-9])*([0-9])/;
   const applicationId = /(applicationId)( )([^\n]+)/;
 
-  const packageNameRegex = /^([a-z_]{1}[a-z0-9_]*(\.[a-z_]{1}[a-z0-9_]*)*)$/;
+  const packageNameRegex = /^(([a-z]{1}(_?[a-z0-9]+)*(\.?[a-z]+)*)+\.{1}([a-z]{1}(_?[a-z0-9]+)*(\.?[a-z]+)*)+)$/;
   const projectNameRegex = /^([a-zA-Z0-9_]*)$/;
   const sdkNumberRegex = /^[1-9]?\d$/;
   const escapeRegex = /[-/\\^$*+?.()|[\]{}]/g;
